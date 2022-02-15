@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+body > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 4px;
+}
+
+body > div > div {
+    background-color: darkgray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    text-align: center;
+    line-height: 40px;
+}
+
+body > div > div:hover {
+    border-bottom-right-radius: 5%;
+    background-color: green;
+    cursor: pointer;
+}
+
+body > div > div:active {
+    background-color: darkgreen;
+}
+
+.answer {
+    background-color: hotpink;
+    border-radius: 20px;
+    width: 172px;
+    height: 40px;
+    text-align: end;
+    padding-right: 12px;
+    font-size: 30px;
+}
+.answer:hover {
+    border-bottom-right-radius: 20px;
+    background-color: hotpink;
+    cursor: default;
+}
+
+.top {
+    background-color: lightgray;
+}
+
+.side {
+    background-color: orange;
+}
+
+.bigmiddle {
+    border-radius: 20px;
+    width: 72px;
+    text-align: left;
+    padding-left: 16px;
+}

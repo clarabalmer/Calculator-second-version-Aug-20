@@ -1,0 +1,49 @@
+<!--This is the second version of my calculator, built with guidance from Bara Kathawa. This version uses an object to hold operators/operands (instead of array in first version). It functions fine for simple operations, but isn't complete (see to do list in js file).
+    -->
+<html>
+    <head>
+        <title>Clara's Calculator</title>
+        <script src="libs/commanumber.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <div class="answer" id="calculation">0</div>
+        </div>
+        <div>
+            <div class="top" onclick="onClickClear()">AC</div>
+            <div class="top" onclick="posneg()">&#177;</div>
+            <div class="top" onclick="percent()">%</div>
+            <div class="side" onclick="onClickOperator('/')">&#247;</div>
+        </div>
+
+        <div>
+            <div onclick="onClickNumber('7')">7</div>
+            <div onclick="onClickNumber('8')">8</div>
+            <div onclick="onClickNumber('9')">9</div>
+            <div class="side" onclick="onClickOperator('*')">&#215;</div>
+        </div>
+
+        <div>
+            <div onclick="onClickNumber('4')">4</div>
+            <div onclick="onClickNumber('5')">5</div>
+            <div onclick="onClickNumber('6')">6</div>
+            <div class="side" onclick="onClickOperator('-')">-</div>
+        </div>
+
+        <div>
+            <div onclick="onClickNumber('1')">1</div>
+            <div onclick="onClickNumber('2')">2</div>
+            <div onclick="onClickNumber('3')">3</div>
+            <div class="side" onclick="onClickOperator('+')">+</div>
+        </div>
+
+        <div>
+            <div class="bigmiddle" onclick="onClickNumber('0')">0</div>
+            <div onclick="onClickDot()">.</div>
+            <div class="side" onclick="onClickEquals()">=</div>
+            <div class="top" onclick="onClickDelete()">del</div>
+        </div>
+    </body>
+</html>
